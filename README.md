@@ -19,6 +19,8 @@ Under the `data-structures-and-algorithms` repository, at the top level is a fol
 
 Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
 
+ ms *no challenge on first day*
+
 ### 401 Data Structures, Code Challenges
 
 - Each Data Structure should be implemented separately in a language specific manner, in a properly named folder.
