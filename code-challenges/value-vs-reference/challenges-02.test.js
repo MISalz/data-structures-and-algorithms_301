@@ -4,29 +4,43 @@
 
 CHALLENGE 1 - Review
 
-Write a function named raisedToTheThird that takes in an array of numbers and returns a new array of each of those numbers raised to the 3rd power (hint: look up Math.pow()). Use forEach to solve this problem.
+Write a function named raisedToTheThird that takes in an array of numbers and returns a new array of 
+each of those numbers raised to the 3rd power (hint: look up Math.pow()). Use forEach to solve this problem.
 
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
-}
+  let result = [];
+  arr.forEach(function(value){
+    result.push(Math.pow(value,3));
+  });
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
+Write a function that appends ' The end.' to a string, and returns the modified string. 
+The original source string should not be modified.
 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
   // Solution code here...
+  let str2 = str + ' The end.';
+  return str2;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
+Write a function that accepts an array and 
+copies the first element to the end of the array. 
+The change should be reflected in the source 
+array that was passed in to the function. 
+That is, the function should modify the array 
+'in place'.
 
 Do not use a return statement.
 
