@@ -52,14 +52,23 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+  let firstValue = arr[0];
+  arr.push(firstValue);
+  console.log(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
+Write a function that accepts an object and an integer
+ as arguments and adds a new property to the object 
+ called yearBorn. The value of the yearBorn property 
+ should be the integer that was passed in.
 
-The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
+The change should be reflected in the source 
+object that was passed in to the function. 
+That is, the function should modify the object 
+'in place'.
 
 Do not use a return statement.
 
@@ -71,13 +80,16 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  obj.yearBorn = year;
+    console.log(obj);
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
-Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the value of the new property to true.
+Write a function that accepts an array of people objects and adds a new property 
+called isAuthor to each object in the list. Set the value of the new property to true.
 
 The function should modify the object in place. Do not use a return statement.
 
@@ -89,6 +101,7 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -156,7 +169,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should add a property to every object in an array', () => {
     const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
     setStatusAsAuthor(a);
