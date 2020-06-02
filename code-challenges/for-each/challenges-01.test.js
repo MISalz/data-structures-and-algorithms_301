@@ -81,7 +81,8 @@ Write a function named fizzbuzz that takes in an array of numbers.
 Iterate over the array using forEach to determine the output based on several rules:
   - If a number is divisible by 3, add the word "Fizz" to the output array.
   - If the number is divisible by 5, add the word "Buzz" to the output array.
-  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" 
+  to the output array.
   - Otherwise, add the number to the output array.
 
 Return the resulting output array.
@@ -89,7 +90,17 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let arr2=[];
+  arr.forEach(function(value){
+    if ((value % 3 === 0) && (value % 5 === 0)){arr2.push('Fizz Buzz');}
+    else if (value % 5 ===0){arr2.push('Buzz');}
+    else if (value % 3 ===0){arr2.push('Fizz');}
+    else {arr2.push(value);}
+  });
+  return arr2;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
