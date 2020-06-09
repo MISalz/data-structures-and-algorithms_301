@@ -6,7 +6,8 @@ const cheerio = require('cheerio');
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Without altering the html, write a function named generateSubmitButton that uses jQuery to create a submit button with the text "submit" and append it to the DOM.
+Without altering the html, write a function named generateSubmitButton that uses 
+jQuery to create a submit button with the text "submit" and append it to the DOM.
 ------------------------------------------------------------------------------------------------ */
 let $ = createSnippetWithJQuery(`
 <section>
@@ -24,6 +25,7 @@ let $ = createSnippetWithJQuery(`
 
 const generateSubmitButton = () => {
   // Solution code here...
+  $('section')=$(`<button>Submit</button>`);
 }
 
 /* ------------------------------------------------------------------------------------------------
