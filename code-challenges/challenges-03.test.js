@@ -59,8 +59,8 @@ with the strings sorted by their length, lowest to highest.
 
 const sortByLength = (arr) => {
   // Solution code here...
-  arr.sort(function(a,b){
-    return a.length-b.length;});
+  arr.sort(function(a, b){
+    return a.length - b.length;});
 };
 
 /* ------------------------------------------------------------------------------------------------
