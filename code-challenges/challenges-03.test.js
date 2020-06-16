@@ -59,9 +59,11 @@ with the strings sorted by their length, lowest to highest.
 
 const sortByLength = (arr) => {
   // Solution code here...
-  arr.sort(function(a, b){
-    return a.length - b.length;});
-};
+  arr.sort((a,b) => {
+    if(a>b){ return -1;}
+    else if(b>a) {return 1;}
+    else {return 0;}
+  });};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
