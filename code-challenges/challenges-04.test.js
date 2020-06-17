@@ -25,8 +25,7 @@ let $ = createSnippetWithJQuery(`
 
 const generateSubmitButton = () => {
   // Solution code here...
-  $('section')=$(`<button>Submit</button>`);
-}
+  $('form').after(`<button>submit</button>`);};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -42,6 +41,8 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  let num =/[0-9]/;
+  return num.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,6 +55,8 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let cap = /[A-Z][a-zA-Z]*/g;
+  return str.match(cap)||[];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +67,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let citi = /^[A-J]/;
+  let newCiti = [];
+  arr.forEach(str =>{
+    if(citi.test(str) === true){
+      newCiti.push(str);
+    }
+  });
+  return newCiti;
 };
 
 /* ------------------------------------------------------------------------------------------------
